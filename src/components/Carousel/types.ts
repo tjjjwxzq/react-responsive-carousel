@@ -24,6 +24,7 @@ export interface CarouselProps {
     autoFocus?: boolean;
     autoPlay?: boolean;
     centerMode?: boolean;
+    centerModeOffset?: number;
     centerSlidePercentage: number;
     children?: React.ReactChild[];
     className?: string;

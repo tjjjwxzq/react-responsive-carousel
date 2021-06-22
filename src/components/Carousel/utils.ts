@@ -20,6 +20,11 @@ export const getPosition = (index: number, props: CarouselProps): number => {
     }
 
     if (index === 0) {
+        if (props.centerMode && props.centerModeOffset) {
+            // This unit is in %
+            return props.centerModeOffset;
+        }
+
         return 0;
     }
 
@@ -31,7 +36,8 @@ export const getPosition = (index: number, props: CarouselProps): number => {
         if (index && (index !== lastPosition || props.infiniteLoop)) {
             currentPosition += (100 - props.centerSlidePercentage) / 2;
         } else if (index === lastPosition) {
-            currentPosition += 100 - props.centerSlidePercentage;
+            const centerModeOffset = props.centerModeOffset || 0;
+            currentPosition += 100 - props.centerSlidePercentage - centerModeOffset;
         }
 
         return currentPosition;
