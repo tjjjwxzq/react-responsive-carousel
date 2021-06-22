@@ -1,11 +1,8 @@
 {
-    "name": "react-responsive-carousel",
-    "version": "3.2.18",
+    "name": "@tjjjwxzq/react-responsive-carousel",
+    "version": "3.2.19",
     "description": "React Responsive Carousel",
-    "author": {
-        "name": "Leandro Augusto Lemos",
-        "url": "http://leandrowd.github.io/"
-    },
+    "author": "Leandro Augusto Lemos (http://leandrowd.github.io/)",
     "main": "lib/js/index.js",
     "types": "lib/ts/index.d.ts",
     "license": "MIT",
@@ -23,7 +20,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/leandrowd/react-responsive-carousel.git"
+        "url": "git+https://github.com/leandrowd/react-responsive-carousel.git"
     },
     "bugs": {
         "url": "https://github.com/leandrowd/react-responsive-carousel/issues"
